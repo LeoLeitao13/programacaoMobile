@@ -1,50 +1,95 @@
-# Welcome to your Expo app 👋
+# 📱 Calculadora Mobile 
+## 📌 Descrição
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+Aplicação mobile desenvolvida em **React Native com TypeScript**, com o objetivo de simular o funcionamento básico de uma calculadora aritmética.
 
-## Get started
+Esta versão corresponde a uma , contemplando apenas operações fundamentais.
 
-1. Install dependencies
+---
 
-   ```bash
-   npm install
-   ```
+## 🎯 Objetivo
 
-2. Start the app
+Desenvolver uma aplicação mobile simples que permita realizar operações matemáticas básicas, simulando o comportamento de uma calculadora tradicional.
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+## 📦 Escopo da 
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+A aplicação deve permitir:
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+- Inserção de números de **0 a 9**
+- Inserção dos operadores matemáticos:
+  - Soma (`+`)
+  - Subtração (`-`)
+  - Multiplicação (`*`)
+  - Divisão (`/`)
+- Cálculo do resultado através do botão `=`
+- Exibição da expressão digitada
+- Exibição do resultado após o cálculo
 
-## Get a fresh project
+---
 
-When you're ready, run:
+## ✅ Requisitos Funcionais (RF)
 
-```bash
-npm run reset-project
-```
+### RF01 – Entrada de números  
+O sistema deve permitir que o usuário insira números de 0 a 9.
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### RF02 – Entrada de operadores  
+O sistema deve permitir a inserção dos operadores matemáticos básicos (`+`, `-`, `*`, `/`).
 
-## Learn more
+### RF03 – Exibição da expressão  
+O sistema deve exibir na tela a expressão que está sendo digitada pelo usuário.
 
-To learn more about developing your project with Expo, look at the following resources:
+### RF04 – Cálculo da expressão  
+Ao pressionar o botão `=`, o sistema deve calcular o resultado da expressão informada.
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+### RF05 – Tratamento de erro  
+Caso a expressão seja inválida, o sistema deve exibir a mensagem **"Erro"**.
 
-## Join the community
+---
 
-Join our community of developers creating universal apps.
+## ⚙️ Requisitos Não Funcionais (RNF)
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+### RNF01 – Plataforma  
+A aplicação deve ser desenvolvida utilizando:
+
+- React Native  
+- TypeScript  
+
+### RNF02 – Interface  
+A interface deve conter:
+
+- Área de exibição (display)
+- Botões organizados em formato de grade
+
+### RNF03 – Usabilidade  
+A aplicação deve permitir interação por toque utilizando `TouchableOpacity`.
+
+---
+
+## 🚫 Fora do Escopo 
+
+Nesta etapa não estão contemplados:
+
+- Histórico de operações
+- Operações matemáticas avançadas
+- Persistência de dados
+- Validações complexas de expressão
+- Segurança contra uso de `eval()`
+
+---
+
+## 🏁 Critérios de Aceitação
+
+A aplicação será considerada válida se:
+
+- Executar sem erros
+- Permitir a montagem de expressões simples (ex: `2+3`)
+- Retornar corretamente o resultado ao pressionar `=`
+- Possuir interface funcional e organizada
+
+---
+
+## 🛠 Tecnologias Utilizadas
+
+- React Native
