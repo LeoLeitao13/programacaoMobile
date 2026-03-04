@@ -93,3 +93,8 @@ A aplicação será considerada válida se:
 ## 🛠 Tecnologias Utilizadas
 
 - React Native
+
+## 🛠 Prototipo
+<img width="480" height="636" alt="image" src="https://github.com/user-attachments/assets/a8e85614-fe11-4e9e-bd97-e9d7bb9b0cdc" />
+
+
